@@ -1,0 +1,30 @@
+/*KL3DGL1TH*/
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+   
+    printf("Aluno: Yuri Gil de Souza\nMatrícula:202221221\nCurso: Análise e Desenvolvimento de Sistemas\nInsituição: UniLaSalle");
+    float n1,n2;
+    printf("\n\nInsira um número: ");
+    scanf("%f",&n1);
+    printf("\nInsira outro número: ");
+    scanf("%f",&n2);
+    
+    
+    printf("\n\nDigite (1) para realizar a raiz quadrada dos números e digite (2) para somá-los: ");
+    int op;
+    scanf("%d",&op);
+    float raiz1= sqrt(n1);
+    float raiz2= sqrt(n2);
+    float soma=n1+n2;
+    if(op==1){
+        printf("A raiz do 1º número é %0.1f e a raiz do 2º número é %0.1f",raiz1,raiz2);
+    }
+    else if(op==2){
+        printf("Soma entre os dois números é %0.1f",soma);
+    }
+    else{
+        printf("DIGITE UM NÚMERO OPERADOR VÁLIDO!!!");
+    }
+    }
